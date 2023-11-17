@@ -34,6 +34,7 @@
         run: |
           hugo \
             --buildDrafts \
+            --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
